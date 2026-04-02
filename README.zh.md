@@ -7,6 +7,7 @@
 </div>
 
 <div align="center">
+  <img src="public/logo.svg" alt="Code and Heartbeat Logo" width="200" height="200">
   <h1>🎮 Code and Heartbeat</h1>
   <p><i>基于 Web 的视觉小说游戏</i></p>
 </div>
