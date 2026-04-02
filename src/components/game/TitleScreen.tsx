@@ -6,33 +6,41 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Play, FolderOpen, Settings } from 'lucide-react';
 import { getBackgroundMusic } from '@/lib/audio/BackgroundMusic';
+import { SettingsPanel } from './SettingsPanel';
+import { SaveLoadPanel } from './SaveLoadPanel';
 
 export function TitleScreen() {
-  const { restartGame, setShowSettings, setShowSaveLoad } = useGame();
+  const { restartGame, setShowSettings, setShowSaveLoad, showSettings, showSaveLoad } = useGame();
   const bgMusicRef = useRef<ReturnType<typeof getBackgroundMusic> | null>(null);
   const musicStartedRef = useRef(false);
 
-  // 启动背景音乐
+  // 启动背景音乐（非阻塞）
   const startMusic = () => {
     if (!musicStartedRef.current && bgMusicRef.current) {
-      bgMusicRef.current.play();
-      musicStartedRef.current = true;
+      try {
+        bgMusicRef.current.play().catch(err => {
+          console.log('Music play failed:', err);
+        });
+        musicStartedRef.current = true;
+      } catch (error) {
+        console.log('Music start error:', error);
+      }
     }
   };
 
   const handleNewGame = () => {
-    startMusic();
     restartGame();
+    startMusic(); // 先执行游戏逻辑，再启动音乐
   };
 
   const handleLoadGame = () => {
-    startMusic();
     setShowSaveLoad(true);
+    startMusic(); // 先执行游戏逻辑，再启动音乐
   };
 
   const handleSettings = () => {
-    startMusic();
     setShowSettings(true);
+    startMusic(); // 先执行游戏逻辑，再启动音乐
   };
 
   useEffect(() => {
@@ -70,11 +78,11 @@ export function TitleScreen() {
           <div className="flex flex-col items-start gap-8">
             {/* 游戏标题 */}
             <div className="animate-in fade-in slide-in-from-left-4 duration-1000">
-              <h1 className="text-6xl font-bold text-foreground mb-3 tracking-tight">
-                代码与心跳
-              </h1>
+              <div className="mb-6">
+                <img src="/logo.svg" alt="Code and Heartbeat" className="w-64 h-auto" />
+              </div>
               <p className="text-xl text-muted-foreground tracking-wide">
-                Code and Heartbeat
+                基于 Web 的视觉小说游戏
               </p>
             </div>
 
@@ -183,6 +191,15 @@ export function TitleScreen() {
       <div className="absolute bottom-6 left-0 right-0 text-center text-xs text-muted-foreground">
         <p>© 2032 Code and Heartbeat | All Rights Reserved</p>
       </div>
+
+      {/* 弹窗层 */}
+      {showSettings && (
+        <SettingsPanel onClose={() => setShowSettings(false)} />
+      )}
+      
+      {showSaveLoad && (
+        <SaveLoadPanel onClose={() => setShowSaveLoad(false)} />
+      )}
     </div>
   );
 }

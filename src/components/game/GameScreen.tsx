@@ -117,25 +117,28 @@ export function GameScreen() {
   
   // 快捷键
   useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        setShowMenu(!showMenu);
-      }
-      if (e.key === 'Enter' || e.key === ' ') {
-        if (!showMenu && !showSettings && !showSaveLoad) {
-          e.preventDefault();
-          handleClick();
+    // 只有在非标题画面时才添加快捷键监听器
+    if (typeof window !== 'undefined') {
+      const handleKeyPress = (e: KeyboardEvent) => {
+        if (e.key === 'Escape') {
+          setShowMenu(!showMenu);
         }
-      }
-      // M键控制音乐播放/暂停
-      if (e.key.toLowerCase() === 'm' && !showMenu && !showSettings && !showSaveLoad) {
-        e.preventDefault();
-        toggleMusic();
-      }
-    };
+        if (e.key === 'Enter' || e.key === ' ') {
+          if (!showMenu && !showSettings && !showSaveLoad) {
+            e.preventDefault();
+            handleClick();
+          }
+        }
+        // M键控制音乐播放/暂停
+        if (e.key.toLowerCase() === 'm' && !showMenu && !showSettings && !showSaveLoad) {
+          e.preventDefault();
+          toggleMusic();
+        }
+      };
 
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
+      window.addEventListener('keydown', handleKeyPress);
+      return () => window.removeEventListener('keydown', handleKeyPress);
+    }
   }, [showMenu, showSettings, showSaveLoad, isTyping, isDialogueComplete]);
 
   // 初始化背景音乐

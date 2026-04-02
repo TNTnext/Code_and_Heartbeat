@@ -1,0 +1,20 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="300" fill="#000000"/>
+  <path d="M100 50H300" stroke="#00FFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M300 50V200" stroke="#00FF88" stroke-width="8" stroke-linecap="round"/>
+  <path d="M300 200H100" stroke="#00FFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M100 200V50" stroke="#00FFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200 50V200" stroke="#00FF88" stroke-width="8" stroke-linecap="round"/>
+  <path d="M150 125L180 175L220 75L260 175L290 125" stroke="#00FF88" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M150 125L290 125" stroke="#00FFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200 200V240" stroke="#00FFFF" stroke-width="8" stroke-linecap="round"/>
+  <path d="M200 240H300" stroke="#00FFFF" stroke-width="8" stroke-linecap="round"/>
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">Code and Heartbeat</text>
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="24" fill="#CCCCCC" text-anchor="middle">010 01</text>
+  <path d="M180 80L190 100" stroke="#00FF88" stroke-width="4" stroke-linecap="round"/>
+  <path d="M180 100L190 80" stroke="#00FF88" stroke-width="4" stroke-linecap="round"/>
+  <path d="M210 80L220 100" stroke="#00FF88" stroke-width="4" stroke-linecap="round"/>
+  <path d="M210 100L220 80" stroke="#00FF88" stroke-width="4" stroke-linecap="round"/>
+  <path d="M260 80L270 100" stroke="#00FF88" stroke-width="4" stroke-linecap="round"/>
+  <path d="M260 100L270 80" stroke="#00FF88" stroke-width="4" stroke-linecap="round"/>
+</svg>
