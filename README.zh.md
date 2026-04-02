@@ -233,8 +233,8 @@ Code_and_Heartbeat/
 
 如有任何问题或建议，请通过以下方式联系我们：
 
-- 📧 邮箱：contact@codeandheartbeat.com
-- 🐙 GitHub：[https://github.com/codeandheartbeat](https://github.com/codeandheartbeat)
+- 📧 邮箱：cyy_zdwxx@163.com
+- 🐙 GitHub：[https://github.com/TNTnext](https://github.com/TNTnext)
 - 📺 Bilibili：[https://space.bilibili.com/3546659195718047](https://space.bilibili.com/3546659195718047)
 
 ---

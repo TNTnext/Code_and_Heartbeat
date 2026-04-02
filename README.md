@@ -233,8 +233,8 @@ This project is licensed under the MIT License.
 
 If you have any questions or suggestions, please contact us through:
 
-- 📧 Email: contact@codeandheartbeat.com
-- 🐙 GitHub: [https://github.com/codeandheartbeat](https://github.com/codeandheartbeat)
+- 📧 Email: cyy_zdwxx@163.com
+- 🐙 GitHub: [https://github.com/TNTnext](https://github.com/TNTnext)
 - 📺 Bilibili: [https://space.bilibili.com/3546659195718047](https://space.bilibili.com/3546659195718047)
 
 ---
