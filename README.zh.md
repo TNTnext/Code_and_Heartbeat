@@ -1,45 +1,77 @@
-# Code and Heartbeat
+<div align="center">
+  <img src="https://img.shields.io/badge/Code_and_Heartbeat-视觉小说-blue?style=for-the-badge&logo=github" alt="项目徽章">
+  <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" alt="Next.js 徽章">
+  <img src="https://img.shields.io/badge/React-19-61dafb?style=for-the-badge&logo=react" alt="React 徽章">
+  <img src="https://img.shields.io/badge/TypeScript-5-3178c6?style=for-the-badge&logo=typescript" alt="TypeScript 徽章">
+  <img src="https://img.shields.io/badge/许可证-MIT-green?style=for-the-badge" alt="许可证徽章">
+</div>
 
-## 项目简介
+<div align="center">
+  <h1>🎮 Code and Heartbeat</h1>
+  <p><i>基于 Web 的视觉小说游戏</i></p>
+</div>
 
-Code and Heartbeat 是一款基于 Web 的视觉小说（Galgame）游戏，讲述上海交大计算机专业新生与天才室友的恋爱故事。游戏融合了浪漫剧情与编程知识，为玩家带来独特的体验。
+<div align="center">
+  <img src="https://img.shields.io/badge/状态-活跃-success?style=flat-square" alt="状态">
+  <img src="https://img.shields.io/badge/版本-1.0.0-blue?style=flat-square" alt="版本">
+  <img src="https://img.shields.io/badge/平台-Web-orange?style=flat-square" alt="平台">
+</div>
+
+---
+
+## 📖 项目简介
+
+**Code and Heartbeat** 是一款沉浸式的基于 Web 的视觉小说（Galgame）游戏，讲述了上海交大计算机专业新生与天才室友的温馨恋爱故事。游戏巧妙地将浪漫剧情与编程知识相结合，为玩家带来独特而精彩的游戏体验。
+
+### 🎯 核心亮点
 
 - **游戏类型**: 视觉小说 + 恋爱模拟
-- **主题**: 校园、友情、爱情、编程
+- **主题**: 校园生活、友情、爱情、编程
 - **目标受众**: 喜欢视觉小说和编程的玩家
+- **语言支持**: 中文 & 英文
 
-## 核心功能
+---
 
-- **对话系统**: 丰富的对话内容和角色互动
-- **好感度系统**: 根据玩家选择影响角色关系
-- **多结局**: 不同的选择会导致不同的结局
-- **存档系统**: 支持手动存档和自动保存
-- **设置系统**: 可调整文本速度、音量等
-- **编程知识**: 融入了真实的编程概念和算法知识
+## ✨ 核心功能
 
-## 技术栈
+| 功能 | 描述 |
+|---------|-------------|
+| 💬 **对话系统** | 丰富的对话内容和角色互动 |
+| ❤️ **好感度系统** | 玩家选择影响角色关系 |
+| 🎭 **多结局** | 不同的选择导致不同的结局 |
+| 💾 **存档系统** | 支持手动存档和自动保存 |
+| ⚙️ **设置系统** | 可调整文本速度、音量等 |
+| 💻 **编程知识** | 融入真实的编程概念和算法知识 |
 
-- **框架**: Next.js 16 (App Router)
-- **核心**: React 19
-- **语言**: TypeScript 5
-- **UI 组件**: shadcn/ui (基于 Radix UI)
-- **样式**: Tailwind CSS 4
-- **包管理器**: pnpm
+---
 
-## 快速开始
+## 🛠️ 技术栈
 
-### 环境要求
+<div align="center">
+  <img src="https://img.shields.io/badge/框架-Next.js_16-black?style=for-the-badge&logo=next.js" alt="Next.js">
+  <img src="https://img.shields.io/badge/核心-React_19-61dafb?style=for-the-badge&logo=react" alt="React">
+  <img src="https://img.shields.io/badge/语言-TypeScript_5-3178c6?style=for-the-badge&logo=typescript" alt="TypeScript">
+  <img src="https://img.shields.io/badge/UI-shadcn/ui-000000?style=for-the-badge" alt="shadcn/ui">
+  <img src="https://img.shields.io/badge/样式-Tailwind_CSS_4-38bdf8?style=for-the-badge&logo=tailwind-css" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/包管理器-pnpm-f69220?style=for-the-badge&logo=pnpm" alt="pnpm">
+</div>
 
-- Node.js 18+
-- pnpm 9+
+---
 
-### 安装依赖
+## 🚀 快速开始
+
+### 📋 环境要求
+
+- **Node.js**: 18+
+- **pnpm**: 9+
+
+### 📦 安装依赖
 
 ```bash
 pnpm install
 ```
 
-### 启动开发服务器
+### 🔥 启动开发服务器
 
 ```bash
 pnpm dev
@@ -47,21 +79,24 @@ pnpm dev
 
 启动后，在浏览器中打开 [http://localhost:3000](http://localhost:3000) 开始游戏。
 
-### 构建生产版本
+### 🏗️ 构建生产版本
 
 ```bash
 pnpm build
 ```
 
-### 启动生产服务器
+### 🌐 启动生产服务器
 
 ```bash
 pnpm start
 ```
 
-## 项目结构
+---
+
+## 📁 项目结构
 
 ```
+Code_and_Heartbeat/
 ├── public/                 # 静态资源（图片、音频等）
 ├── scripts/                # 构建与启动脚本
 ├── src/
@@ -96,40 +131,50 @@ pnpm start
 └── tsconfig.json           # TypeScript 配置
 ```
 
-## 游戏玩法
+---
 
-1. **开始游戏**: 进入游戏后，点击「开始游戏」按钮开始你的故事
-2. **阅读对话**: 点击屏幕或按空格键推进对话
-3. **做出选择**: 在出现选项时，选择你想要的回答
-4. **查看好感度**: 屏幕右上角会显示你与丁乐的好感度
-5. **使用菜单**: 按 ESC 键或点击菜单按钮打开游戏菜单
-6. **存档读档**: 在菜单中可以保存游戏进度或读取之前的存档
-7. **调整设置**: 在设置面板中调整游戏的各种参数
+## 🎮 游戏玩法
 
-## 开发指南
+1. **🎬 开始游戏**: 进入游戏后，点击「开始游戏」按钮开始你的故事
+2. **📖 阅读对话**: 点击屏幕或按空格键推进对话
+3. **🤔 做出选择**: 在出现选项时，选择你想要的回答
+4. **❤️ 查看好感度**: 屏幕右上角会显示你与丁乐的好感度
+5. **📋 使用菜单**: 按 ESC 键或点击菜单按钮打开游戏菜单
+6. **💾 存档读档**: 在菜单中可以保存游戏进度或读取之前的存档
+7. **⚙️ 调整设置**: 在设置面板中调整游戏的各种参数
 
-### 添加新剧情
+---
+
+## 👨‍💻 开发指南
+
+### 📝 添加新剧情
 
 1. 在 `src/lib/game/data.ts` 中添加新场景
 2. 确保每个场景有唯一的 `id`
 3. 设置正确的 `nextSceneId` 或 `choices`
 4. 使用 `SCENE_MAP` 确保场景可被访问
 
-### 添加新选项
+### 🎯 添加新选项
 
 1. 在场景的 `choices` 数组中添加选项
 2. 设置 `affinityChange` 影响好感度
 3. 使用 `addFlags` 添加标记，用于条件判断
 
-### 修改 UI
+### 🎨 修改 UI
 
 1. 所有 UI 组件使用 shadcn/ui
 2. 遵循主题配色（使用 `bg-background`, `text-foreground` 等语义化类名）
 3. 使用 Tailwind CSS 进行样式定制
 
-## 包管理规范
+---
 
-**仅允许使用 pnpm** 作为包管理器，**严禁使用 npm 或 yarn**。
+## 📦 包管理规范
+
+<div align="center">
+  <img src="https://img.shields.io/badge/包管理器-仅使用pnpm-f69220?style=for-the-badge&logo=pnpm" alt="仅使用 pnpm">
+</div>
+
+**⚠️ 仅允许使用 pnpm** 作为包管理器，**严禁使用 npm 或 yarn**。
 
 **常用命令**：
 - 安装依赖：`pnpm add <package>`
@@ -137,33 +182,89 @@ pnpm start
 - 安装所有依赖：`pnpm install`
 - 移除依赖：`pnpm remove <package>`
 
-## 注意事项
+---
+
+## ⚠️ 注意事项
 
 1. **Hydration 错误预防**：严禁在 JSX 渲染逻辑中直接使用 `typeof window`、`Date.now()` 等动态数据。必须使用 `'use client'` 并配合 `useEffect` + `useState`。
 2. **主题一致性**：使用语义化的 Tailwind 类名（`bg-background`, `text-foreground`），避免硬编码颜色。
 3. **TypeScript 严格模式**：所有函数参数必须标注类型，禁止隐式 any。
 
-## 贡献指南
+---
+
+## 🤝 贡献指南
 
 欢迎对游戏进行贡献！如果你有任何建议或想要添加新内容，请：
 
-1. Fork 本仓库
-2. 创建一个新分支
-3. 做出你的修改
-4. 提交 Pull Request
+1. 🍴 Fork 本仓库
+2. 🌿 创建一个新分支
+3. 💻 做出你的修改
+4. 📤 提交 Pull Request
 
-## 许可证
+---
 
-MIT License
+## 📄 许可证
 
-## 联系方式
+<div align="center">
+  <img src="https://img.shields.io/badge/许可证-MIT-green?style=for-the-badge" alt="MIT 许可证">
+</div>
+
+本项目采用 MIT 许可证。
+
+---
+
+## 👤 作者
+
+<div align="center">
+  <h3>🎮 Tnt_next</h3>
+  <p>游戏开发者 & 内容创作者</p>
+  
+  <a href="https://space.bilibili.com/3546659195718047" target="_blank">
+    <img src="https://img.shields.io/badge/Bilibili-@Tnt_next-ff69b4?style=for-the-badge&logo=bilibili" alt="Bilibili">
+  </a>
+  
+  <p>📺 访问我的 B 站频道查看更多内容！</p>
+</div>
+
+---
+
+## 📞 联系方式
 
 如有任何问题或建议，请通过以下方式联系我们：
 
-- 邮箱：contact@codeandheartbeat.com
-- GitHub：[https://github.com/codeandheartbeat](https://github.com/codeandheartbeat)
+- 📧 邮箱：contact@codeandheartbeat.com
+- 🐙 GitHub：[https://github.com/codeandheartbeat](https://github.com/codeandheartbeat)
+- 📺 Bilibili：[https://space.bilibili.com/3546659195718047](https://space.bilibili.com/3546659195718047)
 
-## 语言
+---
 
-- [English](README.md)
-- [中文](README.zh.md)
+## 🤖 AI 开发
+
+<div align="center">
+  <img src="https://img.shields.io/badge/开发方式-AI辅助-purple?style=for-the-badge&logo=artificial-intelligence" alt="AI 开发">
+</div>
+
+<div align="center">
+  <p><i>本项目在 AI 技术的辅助下开发完成。</i></p>
+  <p>游戏代码、文档和创意元素均使用先进的 AI 工具生成和增强，结合人类创造力与人工智能，打造引人入胜的游戏体验。</p>
+</div>
+
+---
+
+## 🌍 语言
+
+<div align="center">
+  <a href="README.md">
+    <img src="https://img.shields.io/badge/🇬🇧-English-blue?style=flat-square" alt="English">
+  </a>
+  <a href="README.zh.md">
+    <img src="https://img.shields.io/badge/🇨🇳-中文-red?style=flat-square" alt="中文">
+  </a>
+</div>
+
+---
+
+<div align="center">
+  <p><i>由 Tnt_next & AI 用 ❤️ 制作</i></p>
+  <p>⭐ 如果喜欢这个项目，请给个 Star！⭐</p>
+</div>
