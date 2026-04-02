@@ -7,7 +7,7 @@
 </div>
 
 <div align="center">
-  <img src="public/logo.png" alt="Code and Heartbeat Logo" width="200" height="200">
+  <img src="logo.png" alt="Code and Heartbeat Logo" width="200" height="200">
   <h1>🎮 Code and Heartbeat</h1>
   <p><i>A Web-Based Visual Novel Game</i></p>
 </div>
