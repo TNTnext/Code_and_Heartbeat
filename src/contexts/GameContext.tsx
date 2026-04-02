@@ -3,6 +3,7 @@
 import React, { createContext, useContext, useState, useCallback, useEffect, useRef } from 'react';
 import { GameState, GameSettings, Scene, DialogueLine, Choice } from '@/lib/game/types';
 import { CHARACTERS, SCENE_MAP, START_SCENE_ID } from '@/lib/game/data';
+import { getBackgroundMusic } from '@/lib/audio/BackgroundMusic';
 import { getSettings, saveSettings, getTextSpeed } from '@/lib/game/settings';
 import { saveGame, autoSave, getAutoSave } from '@/lib/game/saveSystem';
 import { applyAffinityChange, getAffinityChangeMessage } from '@/lib/game/affinity';
@@ -272,7 +273,31 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
   
   // 更新设置
   const updateSettings = useCallback((newSettings: Partial<GameSettings>) => {
-    setSettings(prev => ({ ...prev, ...newSettings }));
+    setSettings(prev => {
+      const updatedSettings = { ...prev, ...newSettings };
+      
+      // 应用音频设置
+      if (typeof window !== 'undefined') {
+        const bgMusic = getBackgroundMusic();
+        if (bgMusic) {
+          // 应用音乐音量设置
+          if ('musicVolume' in newSettings) {
+            bgMusic.setVolume(updatedSettings.musicVolume / 100);
+          }
+          
+          // 应用音乐开关设置
+          if ('musicEnabled' in newSettings) {
+            if (updatedSettings.musicEnabled) {
+              bgMusic.play().catch(err => console.log('Music play error:', err));
+            } else {
+              bgMusic.pause();
+            }
+          }
+        }
+      }
+      
+      return updatedSettings;
+    });
   }, []);
   
   // 获取游戏统计

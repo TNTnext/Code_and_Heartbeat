@@ -162,17 +162,17 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'narrator',
-        text: '桌上摆着一台MacBook，旁边是几本厚厚的算法书——《算法导论》、《挑战程序设计竞赛》...',
+        text: '桌上摆着一台MacBook，旁边是几本厚厚的算法书——《算法导论》、《挑战程序设计竞赛》、《算法竞赛入门经典》...',
         emotion: 'normal',
       },
       {
         speaker: 'narrator',
-        text: '还有几张奖状和证书：CSP-S一等奖、NOIP一等奖、NOI金牌、APIO银奖和金奖...',
+        text: '还有几张奖状和证书：CCPC区域赛金牌、ICPC区域赛银牌、ACM-ICPC亚洲区预选赛一等奖...',
         emotion: 'normal',
       },
       {
         speaker: 'narrator',
-        text: '我的天，这些都是在2029到2032年间获得的...那TA从初中就开始参加竞赛了？',
+        text: '我的天，这些都是在2029到2032年间获得的...那TA从高中就开始参加竞赛了？',
         emotion: 'normal',
       },
       {
@@ -220,17 +220,17 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'dingle',
-        text: '我第一次参加竞赛是在初二，那时候拿了个CSP-S二等奖，之后就一直坚持下来。',
+        text: '我第一次参加竞赛是在高一，那时候拿了个CCPC省赛三等奖，之后就一直坚持下来。',
         emotion: 'normal',
       },
       {
         speaker: 'dingle',
-        text: '2029年高三的时候拿到了CSP-S一等奖，同年还拿到了NOIP一等奖。那时候感觉自己找到了真正热爱的东西。',
+        text: '2029年高三的时候拿到了CCPC区域赛银牌，同年还拿到了ICPC亚洲区预选赛一等奖。那时候感觉自己找到了真正热爱的东西。',
         emotion: 'happy',
       },
       {
         speaker: 'dingle',
-        text: '然后就是NOI...那一年的经历真的很难忘。集训、模拟赛、压力、兴奋...所有的一切都像做梦一样。',
+        text: '然后就是ICPC区域赛...那一年的经历真的很难忘。集训、模拟赛、压力、兴奋...所有的一切都像做梦一样。',
         emotion: 'focused',
         expression: '眼神专注，带着回忆的神情',
       },
@@ -441,7 +441,7 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'dingle',
-        text: '我拿了NOI金牌之后也在寻找队友...如果可以的话，我想和你组队。',
+        text: '我拿了CCPC区域赛金牌之后也在寻找队友...如果可以的话，我想和你组队。',
         emotion: 'happy',
       },
       {
@@ -696,12 +696,12 @@ export const SCENES: Scene[] = [
   },
   {
     id: 'chapter1_3',
-    title: '大一期末 - CSP-J冲刺',
+    title: '大一期末 - ICPC基础训练',
     background: 'bg-dorm.jpg',
     dialogue: [
       {
         speaker: 'narrator',
-        text: '大一上学期很快就结束了。CSP-J初试即将到来。',
+        text: '大一上学期很快就结束了。ICPC校队选拔即将到来。',
         emotion: 'normal',
       },
       {
@@ -711,36 +711,36 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'narrator',
-        text: 'TA帮我复习了很多CSP-J的重点。',
+        text: 'TA帮我复习了很多ICPC的基础算法。',
         emotion: 'normal',
       },
       {
         speaker: 'dingle',
-        text: 'CSP-J还要考时间复杂度。O(1)常数时间，O(n)线性时间，O(n²)平方时间，O(log n)对数时间。',
+        text: 'ICPC需要掌握时间复杂度分析。O(1)常数时间，O(n)线性时间，O(n²)平方时间，O(log n)对数时间，O(n log n)线性对数时间。',
         emotion: 'focused',
         expression: '认真地讲解',
       },
       {
         speaker: 'dingle',
-        text: '空间复杂度也一样，数组是O(n)，二维数组是O(n²)，递归深度是O(n)。',
+        text: '空间复杂度也一样，数组是O(n)，二维数组是O(n²)，递归深度是O(n)，树状数组是O(n)。',
         emotion: 'focused',
         expression: '继续讲解',
       },
       {
         speaker: 'dingle',
-        text: 'STL标准库很有用：vector动态数组，string字符串，stack栈，queue队列，map映射，set集合。',
+        text: 'STL标准库是ICPC的必备工具：vector动态数组，string字符串，stack栈，queue队列，map映射，set集合，priority_queue优先队列。',
         emotion: 'focused',
         expression: '快速讲解',
       },
       {
         speaker: 'dingle',
-        text: 'vector<int> v; v.push_back(x); v.pop_back(); v.size(); v[i]访问第i个元素。',
+        text: 'vector<int> v; v.push_back(x); v.pop_back(); v.size(); v[i]访问第i个元素。sort(v.begin(), v.end())排序。',
         emotion: 'happy',
         expression: '微笑着说',
       },
       {
         speaker: 'dingle',
-        text: 'map<string,int> m; m["key"]=value; m.count("key")判断是否存在。',
+        text: 'priority_queue<int> pq; pq.push(x); pq.top(); pq.pop(); 默认为大顶堆，小顶堆需要用priority_queue<int, vector<int>, greater<int>>。',
         emotion: 'focused',
         expression: '继续讲解',
       },
@@ -820,7 +820,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: 'chapter2_1',
-    title: '大二上学期 - CSP-S数据结构',
+    title: '大二上学期 - ICPC高级数据结构',
     background: 'bg-classroom.jpg',
     dialogue: [
       {
@@ -835,37 +835,37 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'dingle',
-        text: 'CSP-S比CSP-J难多了，需要掌握更多数据结构。',
+        text: 'ICPC需要掌握高级数据结构，这些是解决难题的关键。',
         emotion: 'focused',
         expression: '认真地讲解',
       },
       {
         speaker: 'dingle',
-        text: '链表用指针连接节点，每个节点有数据和next指针。插入删除O(1)，但查找O(n)。',
+        text: '线段树(Segment Tree)可以在O(log n)时间内完成区间查询和修改。每个节点维护一个区间的信息，支持区间求和、最大值、最小值等操作。',
         emotion: 'focused',
         expression: '继续讲解',
       },
       {
         speaker: 'dingle',
-        text: '栈是后进先出(LIFO)，队列是先进先出(FIFO)。stack用push/pop，queue用push/front。',
+        text: '树状数组(Fenwick Tree)比线段树更简洁，只能处理单点修改和前缀查询，代码量更小，也是O(log n)时间复杂度。',
         emotion: 'focused',
         expression: '快速讲解',
       },
       {
         speaker: 'dingle',
-        text: '二叉树有根节点、左右子节点。前序：根左右；中序：左根右；后序：左右根。用递归很容易实现。',
+        text: '平衡树(如Treap、Splay Tree)支持插入、删除、查找第k小、查找排名等操作，都是O(log n)时间复杂度，比普通二叉搜索树更稳定。',
         emotion: 'focused',
         expression: '眼睛发亮',
       },
       {
         speaker: 'dingle',
-        text: '图有邻接矩阵和邻接表两种存储方式。矩阵是二维数组，适合稠密图；表是vector<vector<int>>，适合稀疏图。',
+        text: '并查集(Disjoint Set Union)用于处理集合合并和查询，路径压缩和按秩合并后时间复杂度接近O(1)，常用于处理连通性问题。',
         emotion: 'happy',
         expression: '微笑着说',
       },
       {
         speaker: 'dingle',
-        text: 'DFS深度优先用递归或stack，BFS广度优先用queue。BFS能找到最短路径，因为是一层层扩展的。',
+        text: 'Trie树用于字符串前缀查询，支持高效的字符串查找、插入和删除操作，时间复杂度与字符串长度相关。',
         emotion: 'focused',
         expression: '继续讲解',
       },
@@ -885,7 +885,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: 'chapter2_2',
-    title: '深夜代码 - CSP-S算法',
+    title: '深夜代码 - ICPC高级算法',
     background: 'bg-night.jpg',
     dialogue: [
       {
@@ -906,37 +906,37 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'dingle',
-        text: '快速排序选pivot，小左边大右边，递归处理。归并排序分治思想，先排序再合并，稳定O(n log n)。',
+        text: '高级排序算法：快速排序平均O(n log n)，最坏O(n²)；归并排序稳定O(n log n)；堆排序O(n log n)但常数较大。',
         emotion: 'focused',
         expression: '继续讲解',
       },
       {
         speaker: 'dingle',
-        text: '堆排序用优先队列priority_queue，每次取最大或最小。建堆O(n)，取值O(log n)。',
+        text: '动态规划优化：斜率优化、凸包优化、单调队列优化，用于处理具有决策单调性的DP问题。',
         emotion: 'focused',
         expression: '快速讲解',
       },
       {
         speaker: 'dingle',
-        text: '贪心算法局部最优带来全局最优。活动选择问题按结束时间排序，选结束最早的活动。',
+        text: '网络流算法：Dinic算法用BFS建层次图，DFS增广，时间复杂度O(E√V)，可以处理最大流、最小割、二分图匹配等问题。',
         emotion: 'happy',
         expression: '眼睛发亮',
       },
       {
         speaker: 'dingle',
-        text: '动态规划核心：状态定义 + 状态转移方程 + 边界条件。01背包问题dp[i][j]=max(dp[i-1][j],dp[i-1][j-w[i]]+v[i])。',
+        text: '字符串算法：KMP处理单模式匹配，AC自动机处理多模式匹配，后缀数组和后缀自动机处理子串统计问题。',
         emotion: 'focused',
         expression: '认真讲解',
       },
       {
         speaker: 'dingle',
-        text: '数论基础：素数用埃氏筛法，O(n log log n)。GCD用欧几里得算法gcd(a,b)=gcd(b,a%b)。',
+        text: '数论高级：扩展欧几里得算法求解线性同余方程，中国剩余定理，欧拉函数，莫比乌斯反演，快速幂和矩阵快速幂。',
         emotion: 'focused',
         expression: '继续讲解',
       },
       {
         speaker: 'dingle',
-        text: '组合数学：排列A(n,m)=n!/(n-m)!，组合C(n,m)=n!/(m!(n-m)!)。可以用递推计算。',
+        text: '博弈论：SG函数，Nim游戏，公平组合游戏，必胜必败态分析。',
         emotion: 'happy',
         expression: '微笑着说',
       },
@@ -1058,7 +1058,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: 'chapter3_1',
-    title: '区域赛 - NOI级数据结构',
+    title: '区域赛 - ICPC高级数据结构',
     background: 'bg-classroom.jpg',
     dialogue: [
       {
@@ -1078,31 +1078,31 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'dingle',
-        text: '这道题要用线段树！它能在O(log n)时间内完成区间查询和修改。',
+        text: '这道题要用线段树的延迟标记(Lazy Tag)技术！它能在O(log n)时间内处理区间更新和查询。',
         emotion: 'focused',
         expression: '全神贯注',
       },
       {
         speaker: 'dingle',
-        text: '线段树是二叉树结构，每个节点维护一个区间的信息。查询时拆分区间，修改时更新路径。',
+        text: '线段树的延迟标记：当需要更新一个区间时，不立即更新所有子节点，而是在需要时再向下传递标记，大大提高效率。',
         emotion: 'focused',
         expression: '快速讲解',
       },
       {
         speaker: 'dingle',
-        text: '树状数组(Fenwick Tree)更简单，只能处理单点修改和前缀查询，代码更少，也是O(log n)。',
+        text: '主席树(可持久化线段树)可以保留历史版本，支持查询任意历史时刻的区间信息，时间和空间复杂度都是O(n log n)。',
         emotion: 'focused',
         expression: '继续讲解',
       },
       {
         speaker: 'dingle',
-        text: '平衡树(如Treap)支持插入、删除、查找第k小、查找排名，都是O(log n)。比普通二叉搜索树稳定。',
+        text: 'Link-Cut Tree(LCT)处理动态树问题，支持换根、链查询、连边、删边，是ICPC中的高级数据结构，时间复杂度均摊O(log n)。',
         emotion: 'happy',
         expression: '眼睛发亮',
       },
       {
         speaker: 'dingle',
-        text: 'LCT(Link-Cut Tree)处理动态树问题，支持换根、链查询、连边、删边，是NOI级的高级数据结构。',
+        text: '树链剖分将树分解为链，结合线段树处理路径查询和更新，时间复杂度O(log² n)，是处理树上问题的强大工具。',
         emotion: 'focused',
         expression: '认真讲解',
       },
@@ -1117,7 +1117,7 @@ export const SCENES: Scene[] = [
   },
   {
     id: 'chapter3_2',
-    title: '庆祝 - NOI级算法',
+    title: '庆祝 - ICPC世界总决赛准备',
     background: 'bg-dorm.jpg',
     dialogue: [
       {
@@ -1143,25 +1143,25 @@ export const SCENES: Scene[] = [
       },
       {
         speaker: 'dingle',
-        text: 'NOI级还要掌握网络流。Dinic算法用BFS建层次图，DFS增广，时间复杂度O(E√V)。',
+        text: 'ICPC世界总决赛需要掌握高级网络流算法。Dinic算法优化：当前弧优化、多路增广，时间复杂度可以达到O(E²√V)。',
         emotion: 'focused',
         expression: '认真讲解',
       },
       {
         speaker: 'dingle',
-        text: '最大流最小割定理：最大流量等于最小割容量。最大流可以解决二分图匹配、最小路径覆盖等问题。',
+        text: '费用流算法：最小费用最大流，使用SPFA或Dijkstra结合势能函数(Johnson算法)，处理带权的网络流问题。',
         emotion: 'focused',
         expression: '继续讲解',
       },
       {
         speaker: 'dingle',
-        text: 'KMP算法处理字符串匹配，失配函数O(m)预处理，匹配O(n)。比朴素O(nm)快得多。',
+        text: '高级字符串算法：后缀自动机(SA)可以线性时间构建，支持统计子串出现次数、最长公共子串等问题。',
         emotion: 'happy',
         expression: '眼睛发亮',
       },
       {
         speaker: 'dingle',
-        text: '博弈论里nim游戏是经典。xor和为0必败，非0必胜。sg函数可以把任意博弈转化为nim游戏。',
+        text: '计算几何：凸包(Andrew算法)、半平面交、最近点对、线段相交检测，这些都是ICPC中的常见问题。',
         emotion: 'focused',
         expression: '快速讲解',
       },

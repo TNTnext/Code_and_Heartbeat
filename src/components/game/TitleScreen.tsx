@@ -10,14 +10,16 @@ import { SettingsPanel } from './SettingsPanel';
 import { SaveLoadPanel } from './SaveLoadPanel';
 
 export function TitleScreen() {
-  const { restartGame, setShowSettings, setShowSaveLoad, showSettings, showSaveLoad } = useGame();
+  const { restartGame, setShowSettings, setShowSaveLoad, showSettings, showSaveLoad, settings } = useGame();
   const bgMusicRef = useRef<ReturnType<typeof getBackgroundMusic> | null>(null);
   const musicStartedRef = useRef(false);
 
   // 启动背景音乐（非阻塞）
   const startMusic = () => {
-    if (!musicStartedRef.current && bgMusicRef.current) {
+    if (!musicStartedRef.current && bgMusicRef.current && settings.musicEnabled) {
       try {
+        // 应用音量设置
+        bgMusicRef.current.setVolume(settings.musicVolume / 100);
         bgMusicRef.current.play().catch(err => {
           console.log('Music play failed:', err);
         });
@@ -78,9 +80,9 @@ export function TitleScreen() {
           <div className="flex flex-col items-start gap-8">
             {/* 游戏标题 */}
             <div className="animate-in fade-in slide-in-from-left-4 duration-1000">
-              <div className="mb-6">
-                <img src="/logo.svg" alt="Code and Heartbeat" className="w-64 h-auto" />
-              </div>
+              <h1 className="text-6xl font-bold text-foreground mb-3 tracking-tight">
+                Code and Heartbeat
+              </h1>
               <p className="text-xl text-muted-foreground tracking-wide">
                 基于 Web 的视觉小说游戏
               </p>
