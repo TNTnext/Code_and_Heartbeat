@@ -158,6 +158,8 @@ export const GameProvider: React.FC<{ children: React.ReactNode }> = ({ children
   useEffect(() => {
     if (gameState.currentSceneId === 'title_screen') {
       setIsTitleScreen(true);
+    } else {
+      setIsTitleScreen(false);
     }
   }, [gameState.currentSceneId]);
   
